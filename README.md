@@ -8,8 +8,6 @@ Um jogo para exercitar a lógica de programação, usando os recursos fundamenta
 - Manipulação dos Atributos CSS;
 - Programação funcional (recursividade)
 
-![](/home/heenluy/Documentos/Projetos Git/Jogo Da Velha/prints/Print-00.png)
-
 #### Sobre o jogo:
 
 - Possui um nível por enquanto (fácil);

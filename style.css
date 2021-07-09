@@ -1,0 +1,174 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Contraste);
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Cores */
+:root {
+    --Fundo: black;
+    --Contraste: white;
+    --Enfeite: #191919;
+    --hover: rgba(0,0,0,0.08);
+}
+
+/* Comportamento Universal do Botões */
+button {
+    margin: 2px;
+    padding: 7px;
+
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    border: 2px solid var(--Fundo);
+    border-radius: 3px;
+
+    background-color: initial;
+    color: var(--Fundo);
+
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    color: var(--Contraste);
+    background-color: var(--Fundo);
+}
+
+/* Formatação do Jogo da Velha */
+/*
+
+(1) Centralizar tudo Com o Display Flex;
+(2) Fazer algumas animações com o Hover;
+
+*/
+.principal {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 163px;
+    height: 156px;
+}
+.todosOsItens {
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: initial;
+    color: var(--Fundo);
+
+    border: 2px solid var(--Fundo);
+
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.todosOsItens:hover {
+    color: var(--Enfeite);
+    font-size: 2.8rem;
+
+    background-color: var(--hover);
+}
+
+#item-1 {
+    border-left: none;
+    border-top: none;
+}
+
+#item-2 {
+    border-top: none;
+}
+
+#item-3 {
+    border-right: none;
+    border-top: none;
+}
+
+#item-4 {
+    border-left: none;
+}
+
+#item-6 {
+    border-right: none;
+}
+
+#item-7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#item-8 {
+    border-bottom: none;
+}
+
+#item-9 {
+    border-bottom: none;
+    border-right: none;
+}
+
+#moon {
+    display: inline;
+    font-size: 0.8rem;
+    margin-left: 3px;
+}
+
+#sun {
+    font-size: 0.9rem;
+    margin-left: 3px;
+    display: none;
+}
+
+#return {
+    font-size: 0.8rem;
+    margin-left: 3px;
+}
+
+#claro {
+    display: none;
+}
+
+#escuro {
+    display: inline;
+}
+
+#exibir {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--Fundo);
+    letter-spacing: 2px;
+}
+
+body hr {
+    width: 82px;
+    height: 2px;
+    background-color: var(--Enfeite);
+
+    margin-top: 5px;
+    outline: none;
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}

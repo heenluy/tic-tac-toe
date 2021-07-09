@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha!</title>
+    <script src="https://kit.fontawesome.com/3e4546bab8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="exibir">Jogo da velha</div>
+    <hr>
+    
+    <header>
+        <div id="controlaBtnS">
+            <button id="reiniciar" onclick="iniciar()">Reiniciar<i class="fas fa-power-off" id="return"></i></button>
+
+            <button id="Tema" onclick="theme()">
+                <span id="claro">Claro</span><span id="escuro">Escuro</span>
+                <i class="fas fa-moon" id="moon"></i><i class="fas fa-sun" id="sun"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="principal">
+        <div class="todosOsItens" id="item-1" onclick="jogar(1)"></div>
+        <div class="todosOsItens" id="item-2" onclick="jogar(2)"></div>
+        <div class="todosOsItens" id="item-3" onclick="jogar(3)"></div>
+        <div class="todosOsItens" id="item-4" onclick="jogar(4)"></div>
+        <div class="todosOsItens" id="item-5" onclick="jogar(5)"></div>
+        <div class="todosOsItens" id="item-6" onclick="jogar(6)"></div>
+        <div class="todosOsItens" id="item-7" onclick="jogar(7)"></div>
+        <div class="todosOsItens" id="item-8" onclick="jogar(8)"></div>
+        <div class="todosOsItens" id="item-9" onclick="jogar(9)"></div>
+    </div>   
+
+<script src="script.js"></script>
+</body>
+
+</html>
